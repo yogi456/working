@@ -25,8 +25,21 @@
     <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
     <link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel = "icon" href =  
+    "https://elasticbeanstalk-ap-south-1-311086689791.s3.ap-south-1.amazonaws.com/android-chrome-192x192.png" 
+            type = "image/x-icon"> 
   </head>
-  <body>
+  <script>
+    function disableClick(){
+      document.onclick=function(event){
+        if (event.button == 2) {
+          alert('Right Click Message');
+          return false;
+        }
+      }
+    }
+  </script>
+  <body onLoad="disableClick()">
   	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="{%url 'index'%}"><span class="flaticon-lotus"></span>LookBook</a>

@@ -22,7 +22,8 @@ urlpatterns = [
     path('detailsofbook/<bookid>',views.detailsofbook,name="detailsofbook"),
     path('requestBook/',views.requestabook,name="requestBook"),
     path('deletebook/<bookid>',views.deletebook,name="deletebook"),
-    path('aboutus/',views.aboutus,name="aboutus")
+    path('aboutus/',views.aboutus,name="aboutus"),
+    path('online/',views.online,name="online")
     #path('search/',views.search,name="search"),
     #url(r'^requestabook/(?P<username>[\w|\W.-]+)/(?P<bookid>[\w|\W.-]+)/$',views.profile),
 ]
